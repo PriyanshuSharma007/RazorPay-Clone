@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>razorpay</title>
+    <link rel="stylesheet" href="main.css ">
+    <!-- to import fonts  -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+
+    <div>
+          <!-- full nav bar creation  -->
+    <nav class=" bg-deepBlue">
+        <!-- all the items of navigation bar -->
+        <div class="relative w-[1080px] mx-auto flex items-center justify-evenly">
+
+            <!-- logo -->
+            <a href="#" class="cursor-pointer py-7 pr-7">
+                <img src="/assets/logo-DmLh40Ca.png" alt="image" width="125px" height="30px"> <!--add image of razorpay here -->
+            </a>
+
+            <ul class="flex space-x-6">
+                <li
+                    class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Payments</a>
+                    <div class=" absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block"></div>
+                </li>
+                <li
+                    class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Banking</a>
+                    <div class=" absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block"></div>
+                </li>
+                <li
+                    class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Corporate Card</a>
+                    <div class=" absolute bottom-0 w-full h-1 bg-lightBlue hidden "></div>
+                </li>
+                <li
+                    class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Payroll</a>
+                    <div class=" absolute bottom-0 w-full h-1 bg-lightBlue hidden "></div>
+                </li>
+                <li
+                    class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Resources</a>
+                    <div class=" absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block"></div>
+                </li>
+                <li
+                    class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Support</a>
+                    <div class=" absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block"></div>
+                </li>
+                <li
+                    class="text-white font-mullish py-7 hover:text-lightBlue cursor-pointer transition-all duration-200 relative group">
+                    <a href="#">Pricing</a>
+                    <div class=" absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block"></div>
+                </li>
+
+                <div class="flex space-x-6 items-center">
+                    <img src="data:image/png;base64,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" alt="iamge" width="28px" height="20px">
+
+                    <button class="py-3 px-5 font-mullish text-white border-lightBlue border
+                    rounded-sm text-sm  font-bold">Log in</button>
+
+                    <button class="py-3 px-4 font-mullish rounded-sm text-sm font-bold
+                     bg-white text-lightBlue300 border transition-all duration-200
+                     hover:text-lightBlue500 hidden lg:flex">Sign
+                        Up
+                        <svg viewBox="0 0 24 24" focusable="false" class="w-[14px] h-[14px] ml-3">
+                            <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z">
+                            </path>
+                        </svg>
+                    </button>
+
+                </div>
+
+            </ul>
+
+
+        </div>
+    </nav>
+
+
+    <!-- hero section of the website -->
+    <section class="relative bg-deepBlue">
+
+        <div class="w-10/12 max-w-[1080px] flex sm:flex-col lg:flex-row justify-between items-center mx-auto ">
+            <!--left part-->
+            <div class="space-y-8">
+                <h1 class="font-mullish font-bold text-[40px] leading-[1.2] text-white">Power your finance, grow your
+                    business</h1>
+                <div class="w-6 h-1 bg-greenLight"></div>
+                <p class="font-mullish text-[18px] leading-7 text-white opacity-70">
+                    Accept payments from customers. Automate payouts to vendors &
+                    employees. Never run out of working capital.
+                </p>
+                <button class="bg-lightBlue text-white  py-[14px] px-[18px] rounded-md font-mullish font-bold
+                 hover:bg-lightBlue500 transition-all duration-200">Sign Up Now</button>
+            </div>
+            <!--right part-->
+            <img src="/assets/herosection-DK5hV_lV.jpg" alt="" class="w-full max-w-[680px]">
+        </div>
+
+        <!--shape part-->
+        <div class="w-[100.1%] absolute left-0 right-0">
+            <img src="/assets/hero-shape%20(1)-B4nSUlDQ.jpg" alt="" class="w-full object-fill ">
+        </div>
+
+    </section>
+
+
+    <!-- features-- description section  -->
+    <section class="relative mt-[190px] overflow-hidden">
+        <!-- for image at left or right -->
+        <img src="data:image/png;base64,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" alt="" loading="lazy" width="233" height="167"
+            class="absolute -top-[8rem] left-[10rem] inline-block -z-10">
+
+        <img src="data:image/png;base64,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" alt="" loading="lazy" width="233" height="167"
+            class="absolute top-[3rem] right-0 inline-block rotate-180">
+
+        <div>
+            <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+                <!-- heading -->
+                <h2 class="font-mullish text-center text-2xl leading-[1.2] font-bold">Accept payments with Razorpay
+                    Payment
+                    Suite</h2>
+                <h2 class="font-mullish text-center text-5xl leading-[1.2] font-extrabold  md:hidden">Explore Razorpay
+                    Payment Suite</h2>
+
+                <!-- underline part-->
+                <div class="w-6  h-1 bg-greenLight mx-auto mt-4 mb-6 ">
+                </div>
+
+                <!-- content box for feature and image -->
+                <div class="w-full min-h-[520px] bg-white flex rounded-md relative p-10 py-12 border">
+                    <!-- left section of feature box -->
+
+                    <div class="flex flex-col justify-between w-full">
+
+                        <h3 class="font-mullish text-[28px] leading-10 font-bold max-w-[500px]">Supercharge your
+                            business
+                            with the all-powerful <span class="text-lightBlue"> Payment Gateway</span>
+                        </h3>
+
+                        <ul class="space-y-2 ">
+                            <li class="font-mullish flex flex-row items-center space-x-2 ">
+                                <!-- icon tage add tick icon -->
+                                <span class="text-greenLight">&#10003;</span>
+                                <span>100+ Payment Methods</span>
+                            </li>
+                            <li class="font-mullish flex flex-row items-center space-x-2 ">
+                                <span class="text-greenLight">&#10003;</span>
+                                <span>Industry Leading Success Rate</span>
+                            </li>
+                            <li class="font-mullish flex flex-row items-center space-x-2 ">
+                                <span class="text-greenLight">&#10003;</span>
+                                <span>Superior Checkout Experience</span>
+                            </li>
+                            <li class="font-mullish flex flex-row items-center space-x-2 ">
+                                <span class="text-greenLight">&#10003;</span>
+                                <span>Easy to Integrate</span>
+                            </li>
+                            <li class="font-mullish flex flex-row items-center space-x-2 ">
+                                <span class="text-greenLight">&#10003;</span>
+                                <span>Instant Settlement from day 1</span>
+                            </li>
+                            <li class="font-mullish flex flex-row items-center space-x-2 ">
+                                <span class="text-greenLight">&#10003;</span>
+                                <span>In-depth Reporting nd insights</span>
+                            </li>
+                        </ul>
+
+                        <!-- for button and hyper link -->
+                        <div class="flex flex-row items-center space-x-4 ">
+                            <button
+                                class="bg-lightBlue w-fit text-white py-[14px] px-[18px] rounded-md font-mullish font-bold hover:bg-lightBlue500 translate all duration-200 ">Sign
+                                Up Now</button>
+                            <!-- hyperlink -->
+                            <div class="flex items-center cursor-pointer group">
+                                <a href="#"
+                                    class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">
+                                    Know More </a>
+                                <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 
+                            group-hover:text-grayBlue transition-all duration-200"></i>
+                            </div>
+                        </div>
+
+                        <!-- right part of the feature box -->
+                    </div>
+                    <img src="/assets/payment-suite-fhKuLaJR.png" alt=""
+                        class="max-w-[600px] absolute right-0 bottom-0 hidden md:max-w-[400px] lg:max-w-[600px] md:block lg:block">
+                </div>
+
+
+                <!-- feature section  -->
+
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+                    <!-- box 1 -->
+                      <div class="w-full min-h-[15rem] relative cursor-pointer featureCard">
+                        <!-- Box icon -->
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAABmJLR0QA/wD/AP+gvaeTAAABQElEQVRYhe2UTytEURjGn4spjShSdsrGSkrxISwkZTFZWM03kCz4DjY+BUlCzVLJmLK0tyD/ukVRFqSfzTt1mu51j8zcq+k89dbpvfec59dz/khBQUHdLmAAWAJ6igIYAi6Ad2C2KIBz4AM4yD0J24IzAzgE+roXABgBroANp9c8A5+2Bb1Of7i12gExBbwCu45RPQGgCjwCcUs9AdtZPt4xAoOSapLmJB1LWo6i6Ms+1yU1bNwvacKqJGnc1yPNuJnEUVICKXMWgVvgHngD9tsFEf8S4A7YBJ59IHzv9aikF0llSSdADdhqBZC0Y2uuSdrzXPtnAWPAdcKBi4FTF8BJoGK9Sd8kfEDKSVcPKKUBOPMugfU/Q2QAzgM3wAOw2lGz/wqw4ACs5A5gEA17ByrZf3cOYhqYKQwgKCgoT30DNQHDjmbwyGIAAAAASUVORK5CYII=" alt=""
+                            class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80] featureCardIcon transition-all duration-200" />
+
+                        <!-- Box shape -->
+                        <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="none"
+                            class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
+                            style="stroke-opacity: 0.15">
+                            <path d="m 0 6 
+              a 6 6 0 0 1 6 -6 
+              h 250.32501220703125 
+              a 16 16 0 0 1 11 5 
+              l 77 77 
+              a 16 16 0 0 1 5 11 
+              v 126 
+              a 6 6 0 0 1 -6 6 
+              h -337.32501220703125 
+              a 6 6 0 0 1 -6 -6 
+              z" fill="#fff"></path>
+                        </svg>
+
+                        <!-- Box content -->
+                        <div
+                            class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox">
+                            <div>
+                                <h3 class="font-mullish font-extrabold text-deepBlueHead leading-[1.2] text-[1.375rem]">
+                                    Payment Links
+                                </h3>
+
+                                <p class="font-mullish text-grayText mt-6">
+                                    Share payment link via an email, SMS, messenger, chatbot etc.
+                                    and get paid immediately
+                                </p>
+                            </div>
+
+                            <!-- HyperLink Know More -->
+                            <div class="flex items-center cursor-pointer place-items-end">
+                                <a href="#"
+                                    class="font-mullish font-bold text-lightBlue500 transition-all duration-200">Know
+                                    More</a>
+
+                                <i data-feather="chevron-right"
+                                    class="w-5 h-5 text-lightBlue500 transition-all duration-200"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- box 2 -->
+                   <div class="w-full min-h-[15rem] relative cursor-pointer featureCard">
+                        <!-- Box icon -->
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAABmJLR0QA/wD/AP+gvaeTAAABn0lEQVRYhe2WsUodQRiFv5OEq8WFRIUgEWyMXTqtLBVE8gIBC9NbmcIyEEJewMpOkiIqgloJdhY2Bn2BgFhY2Ihe0OQmuUZPijtFEJ2ZXYWk2K+ZZThz5sy/szMLFRUVN6Mcke0RoK+gdwvYlXRUONUtIVZdjqbtl/cZYrngmJrtFds7Ke2D8tHiSGoBu8CzlPZRpmcNqNkeimgakg4y/Yphe9z2j8w98OHa2Fnbh6k5cioxCXQCc8DPiG4KmLY9ALyVtJ/hnYftpbDK7oTui+1vtk9sj4a+e6tEES4k9RQdVCqE7TrwhvaBdCZpvozPnUIAr4D3gAHZ3voXITaBNeAKOAXutAlzQjRDu2C79Vf/ZWi7gEXgOfC9TIjkBWZ7GNgAniakLWAmhHpNe4GPgaak/tjAZCUk7dneBi6A6Yi0GfzOgY/AV2ACGEjNkbsn1M6jRkwUvhrRfj0PgXfAp5R57gV2DAza7sjUjwHrwArx6gH5PzUvgG2gg/jRLeBJeF4EpiRdRvT5IUKQXmAUqGfIfwGfJf3O9a+oqPhv+QPVqv5QGSxt5AAAAABJRU5ErkJggg==" alt=""
+                            class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80] featureCardIcon transition-all duration-200" />
+
+                        <!-- Box shape -->
+                        <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="none"
+                            class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
+                            style="stroke-opacity: 0.15">
+                            <path d="m 0 6 
+              a 6 6 0 0 1 6 -6 
+              h 250.32501220703125 
+              a 16 16 0 0 1 11 5 
+              l 77 77 
+              a 16 16 0 0 1 5 11 
+              v 126 
+              a 6 6 0 0 1 -6 6 
+              h -337.32501220703125 
+              a 6 6 0 0 1 -6 -6 
+              z" fill="#fff"></path>
+                        </svg>
+
+                        <!-- Box content -->
+                        <div
+                            class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox">
+                            <div>
+                                <h3 class="font-mullish font-extrabold text-deepBlueHead leading-[1.2] text-[1.375rem]">
+                                    Payment Pages
+                                </h3>
+
+                                <p class="font-mullish text-grayText mt-6">
+                                    Take your store online instantly with zero coding. Accept international & domestic
+                                    payments
+                                </p>
+                            </div>
+
+                            <!-- HyperLink Know More -->
+                            <div class="flex items-center cursor-pointer place-items-end">
+                                <a href="#"
+                                    class="font-mullish font-bold text-lightBlue500 transition-all duration-200">Know
+                                    More</a>
+
+                                <i data-feather="chevron-right"
+                                    class="w-5 h-5 text-lightBlue500 transition-all duration-200"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- box 3 -->
+                     <div class="w-full min-h-[15rem] relative cursor-pointer featureCard">
+                        <!-- Box icon -->
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAABmJLR0QA/wD/AP+gvaeTAAACPElEQVRYhe2WO2sVQQBGz4gm0SQKpvCFopJGouCLIMHKYKMoNj5+hWhroY29YhMwVUwjdmIhIqaIkRSiTQyCr0KwMBrxgTFR9FjsXLiE683c3S0s9jTDzu6c+XaYF1RUVFRUVFT8R4QyJOoy4DBwCNgItCc0+wG8Be6FECbKyJGEuledshjj6raU/gqNsDoA3AdWATPATeAl8DOheQewEzgDdMf2AyGE10UyNQvbqb6LI3Rb7c7pWa9ORs/jOL3KRz0XO5lWOwq6etQP0Xe82bdF/uZYLK+EEOYLeAghzALXF3kbUiTw1lg+LeCo50kstzf7aHmrVrUfOA2si1UpW1gKtWnVdMEmB1a7gGGyVV3PIDDZUrTGDMbyWWGT2q4+iotiQR1Wr8bnj+rmgv490ftH3VdG4Msx3Ht1d6wL6kSsf6UeyOk+qs5Ez42lvl/y4FBXkm3qXcCREMLduncbgAfAjlg1RXZw/E7I2gb0Ab3xeTz6vye0bRp4MP79i3+8X61eU+dbOYvr+KJeUttS8qQsutr8nG70MoTwFTirXgAOkl1+lvJeBDYB54GhEMJCStgk1JNxJMZKdL6Jzv1lOevlvVE+p/aU4Our83WWkbFRJ7UtbUTNfcNTV6hj0TVaZsbFHfWb7ZOqt9QtORx9dWFn8zighfuwegoYITtCJdu+viU2XwvULuifgBMhhIct5MyHuku9o/7KsX3NqaN5R7ZGrvmoriE7LLoSm3wGnhc+FCoqKioqKioqCvIXFsI66VLzHdMAAAAASUVORK5CYII=" alt=""
+                            class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80] featureCardIcon transition-all duration-200" />
+
+                        <!-- Box shape -->
+                        <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="none"
+                            class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
+                            style="stroke-opacity: 0.15">
+                            <path d="m 0 6 
+              a 6 6 0 0 1 6 -6 
+              h 250.32501220703125 
+              a 16 16 0 0 1 11 5 
+              l 77 77 
+              a 16 16 0 0 1 5 11 
+              v 126 
+              a 6 6 0 0 1 -6 6 
+              h -337.32501220703125 
+              a 6 6 0 0 1 -6 -6 
+              z" fill="#fff"></path>
+                        </svg>
+
+                        <!-- Box content -->
+                        <div
+                            class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox">
+                            <div>
+                                <h3 class="font-mullish font-extrabold text-deepBlueHead leading-[1.2] text-[1.375rem]">
+                                    Payment Buttons
+                                </h3>
+
+                                <p class="font-mullish text-grayText mt-6">
+                                    Create, Copy & Collect With Payment Button. Collect one time or subscription
+                                    payments &
+                                    more
+                                </p>
+                            </div>
+
+                            <!-- HyperLink Know More -->
+                            <div class="flex items-center cursor-pointer place-items-end">
+                                <a href="#"
+                                    class="font-mullish font-bold text-lightBlue500 transition-all duration-200">Know
+                                    More</a>
+
+                                <i data-feather="chevron-right"
+                                    class="w-5 h-5 text-lightBlue500 transition-all duration-200"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- box 4 -->
+                       <div class="w-full min-h-[15rem] relative cursor-pointer featureCard">
+                        <!-- Box icon -->
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAABmJLR0QA/wD/AP+gvaeTAAACMElEQVRYhe2WP0hWURiHnxORkWZlRRCFQ0IiEQZFEQSFU6MtuQkNRUNhawRCVGC4ihAEteQQRTTU0hIUKkWhRk0mVhKi1VCDafY0eIIPu3/o05sNvnC53PP7nfM+99xzz3tgOZZjEUOtVg/9DxBj6mU1LAXADrVF/ajOqA/UTf8icaXaqfarX/0znqsriwQ4rg6q0xGiWz2hvooAT9TaIgHOqRPqa/V06fdXh9RbakWRAMfUT2qfui1Bby4seUywTn2jDqhbyuhfpz5VN2f58hZRO1ALtIYQxucl6ErofzWEMFzy3ADsAS4Bp9KSrMiBOAL0hhBuJ2gjwFugBjgJTABTpYYQwn2gFziopuZKFdQGoA7oT7FsiNcw8C16k2b2WdR2/zUE0ARUAY8zPL9jCqhM0fqA1UDq9p61JjYCM8BYin4HCEAjsB64EEIYTfB9AH4CqbtpFsRs1GtS9F5gFfAD6AwhDKT4djE34+/TEmV9jpfxvjdFrwf2MbcgRzLGOQBMA4MZnuSIdWJU7cnxtcXNrCpBC7GeDGX9HXkg92Kp3pkDO6meSdBa1e/qzbIA4iCH1S/q9RzfRfVF6duqa+NO+07dXjZEHKxNXZOhb01oq1AfqVNq+4IAcuCq1btq97z2+ljWp9UbRQI0xalW7YrrolntiSetSbWjsCOfelQdLzlNjcVrNrY/VPcXknweyBX1c8mR7pp6vpxyv1CQFnUklvSlC7VRPbukEMux2PELZA7yeBZn+8kAAAAASUVORK5CYII=" alt=""
+                            class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80] featureCardIcon transition-all duration-200" />
+
+                        <!-- Box shape -->
+                        <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="none"
+                            class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
+                            style="stroke-opacity: 0.15">
+                            <path d="m 0 6 
+              a 6 6 0 0 1 6 -6 
+              h 250.32501220703125 
+              a 16 16 0 0 1 11 5 
+              l 77 77 
+              a 16 16 0 0 1 5 11 
+              v 126 
+              a 6 6 0 0 1 -6 6 
+              h -337.32501220703125 
+              a 6 6 0 0 1 -6 -6 
+              z" fill="#fff"></path>
+                        </svg>
+
+                        <!-- Box content -->
+                        <div
+                            class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox">
+                            <div>
+                                <h3 class="font-mullish font-extrabold text-deepBlueHead leading-[1.2] text-[1.375rem]">
+                                    Subscriptions
+                                </h3>
+
+                                <p class="font-mullish text-grayText mt-6">
+                                    Subscription plans with automated recurring transactions on various payment modes
+                                </p>
+                            </div>
+
+                            <!-- HyperLink Know More -->
+                            <div class="flex items-center cursor-pointer place-items-end">
+                                <a href="#"
+                                    class="font-mullish font-bold text-lightBlue500 transition-all duration-200">Know
+                                    More</a>
+
+                                <i data-feather="chevron-right"
+                                    class="w-5 h-5 text-lightBlue500 transition-all duration-200"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- box 5 -->
+                    <div class="w-full min-h-[15rem] relative cursor-pointer featureCard">
+                        <!-- Box icon -->
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAABmJLR0QA/wD/AP+gvaeTAAABEElEQVRYhe2VPyvFURyHn58/hSRlUN6AYlPyDmQwewsmzNKdzEYmq/IC2GWURRYRZbJZLOjeHsM9lzr9yv117v256TzLOX07fb5PnX+QyWT+A+qoOlZSn6pT4lS9jGrLalPdS8keqrB2AliIarPAMDBXl8QNMKMupTRMlTgBWsCROv0nEkVR3AH7wApwra71UqQS6o76aZvnMB5GaxbVjX6LzKvn/hBLnAXRoq8iodluLBHekzf1pducKgezjNuS2jYwCVx0GzKSKPGNOg5s0T68LeCgV9m/NV4P23GvvoZ5U92sRSCS6PCkrtYmEEm8q42yD65OieOUnNTb0eFjECSSSJV4AB6Bqx64ZDKZweQLJ2fTFB8puVsAAAAASUVORK5CYII=" alt=""
+                            class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80] featureCardIcon transition-all duration-200" />
+
+                        <!-- Box shape -->
+                        <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="none"
+                            class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
+                            style="stroke-opacity: 0.15">
+                            <path d="m 0 6 
+              a 6 6 0 0 1 6 -6 
+              h 250.32501220703125 
+              a 16 16 0 0 1 11 5 
+              l 77 77 
+              a 16 16 0 0 1 5 11 
+              v 126 
+              a 6 6 0 0 1 -6 6 
+              h -337.32501220703125 
+              a 6 6 0 0 1 -6 -6 
+              z" fill="#fff"></path>
+                        </svg>
+
+                        <!-- Box content -->
+                        <div
+                            class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox">
+                            <div>
+                                <h3 class="font-mullish font-extrabold text-deepBlueHead leading-[1.2] text-[1.375rem]">
+                                    Route
+                                </h3>
+
+                                <p class="font-mullish text-grayText mt-6">
+                                    Split incoming payments auto- matically to vendor’s accounts, manage marketplace
+                                    money
+                                    flow...
+                                </p>
+                            </div>
+
+                            <!-- HyperLink Know More -->
+                            <div class="flex items-center cursor-pointer place-items-end">
+                                <a href="#"
+                                    class="font-mullish font-bold text-lightBlue500 transition-all duration-200">Know
+                                    More</a>
+
+                                <i data-feather="chevron-right"
+                                    class="w-5 h-5 text-lightBlue500 transition-all duration-200"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- box 6 -->
+                     <div class="w-full min-h-[15rem] relative cursor-pointer featureCard">
+                        <!-- Box icon -->
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAABk0lEQVRYhe3Uz4tNcRgG8OcYl7FkYTc1sR1LZWElKWGpLMRfoPwZMiubSVI29jQsbEZZKJIfTYrIlESiLMxl0sztYzFfdeY27rlyr1LnWb7v0/M87/ue801atGjxPwPn8R7n/rXxPszbiJuYGZfhUcziGl7WTO/iIO7Vai8KbxZHRhXgS82gW6Y/hqr0K5zALXyrcT+PKsAPPMMebG3gdrAXi/jepD1QrK6bpFtV1VITsaqq1SRvsJKk18TfMmSA3h9wf2EiydqoAqwN4uIwPmB/n3bjBoY9QTfJzj7T60nuJPmYZD7JUpLXNcquJMtD6g8G7mOl/gHiNnql/hy7a73tWMVCk/awJ3iSZDJJfcUnkyxkfepDVVV9qvUOZH27T4fUHwwcL//1pb56hYlN+HOFP7KHqIOl8shMNXCny1lebRbub0KcLVM9wORvODvwqPBOjcy8ZnCliD/GdF9vCg9Lf27k5sVkG64Wk6+4gBlcxHKpX0ZnLAFqQU7jnY14O5a1DwjRwRncKIHGO3WLFi3GhZ8pubxa/59BwQAAAABJRU5ErkJggg==" alt=""
+                            class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80] featureCardIcon transition-all duration-200" />
+
+                        <!-- Box shape -->
+                        <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="none"
+                            class="stroke-1 stroke-[#818597] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
+                            style="stroke-opacity: 0.15">
+                            <path d="m 0 6 
+              a 6 6 0 0 1 6 -6 
+              h 250.32501220703125 
+              a 16 16 0 0 1 11 5 
+              l 77 77 
+              a 16 16 0 0 1 5 11 
+              v 126 
+              a 6 6 0 0 1 -6 6 
+              h -337.32501220703125 
+              a 6 6 0 0 1 -6 -6 
+              z" fill="#fff"></path>
+                        </svg>
+
+                        <!-- Box content -->
+                        <div
+                            class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox">
+                            <div>
+                                <h3 class="font-mullish font-extrabold text-deepBlueHead leading-[1.2] text-[1.375rem]">
+                                    Smart Collect
+                                </h3>
+
+                                <p class="font-mullish text-grayText mt-6">
+                                    Automatically reconcile incoming NEFT, RTGS, IMPS, UPI payments using Virtual
+                                    Accounts &
+                                    UPI-IDs
+                                </p>
+                            </div>
+
+                            <!-- HyperLink Know More -->
+                            <div class="flex items-center cursor-pointer place-items-end">
+                                <a href="#"
+                                    class="font-mullish font-bold text-lightBlue500 transition-all duration-200">Know
+                                    More</a>
+
+                                <i data-feather="chevron-right"
+                                    class="w-5 h-5 text-lightBlue500 transition-all duration-200"></i>
+                            </div>
+
+                        </div>
+                </div>
+            </div>
+
+    </section>
+
+
+    <!-- feature section---2  -->
+    <section class="bg-[url(images\feature-section-2BG.png)] bg-no-repeat bg-cover pb-[500px] mt-14 pt-[20rem]">
+        <!-- not repate the image-->
+        <div class="w-10/12 max-w-[1080px] mx-auto relative pt-4">
+
+            <h2 class="font-mullish text-center text-2xl leading-[1.2] text-white font-bold">Explore Razorpay Business
+                Banking </h2>
+            <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+
+            <!-- main feature box -->
+            <div class="w-full min-h[440px] flex flex-col relative">
+                <img src="/assets/x-flame-1-BaK-peT9.png" alt="image" loading="lazy"
+                    class="absolute -top-[142px] -left-[140px] w-[200px]">
+                <img src="/assets/x-flame-2-Bluv15sW.png" alt="image" loading="lazy"
+                    class="absolute top-[150px] -right-[180px] w-[200px]">
+
+                <!-- content box   -->
+
+                <div class="relative w-full bg-[#181c2e] p-10 py-12 border border-slate-700 z-20 rounded-md ">
+                    <!-- left part -->
+                    <div class="flex flex-col justify-between items-start h-full w-full gap-12 z-20">
+
+                        <h3 class="font-mullish text-[28px] text-white font-bold leading-10 max-w-[500px]">
+                            Manage your company’s finances with
+                            <img src="/assets/logo-DmLh40Ca.png" alt="" width="168px" height="32px" class="inline">
+                            <span class="text-greenLight">Business Banking</span>
+                        </h3>
+                        <ul>
+                            <li class="font-mullish text-white flex items-center space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
+                                <span>Open a fully digital current account
+                                </span>
+                            </li>
+
+                            <li class="font-mullish text-white flex items-center space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
+                                <span>Automate payables & compliment payments
+                                </span>
+                            </li>
+
+                            <li class="font-mullish text-white flex items-center space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
+                                <span>Simplify and track spends with Corporate cards
+                                </span>
+                            </li>
+
+                            <li class="font-mullish text-white flex items-center space-x-2">
+                                <i data-feather="check" class="text-greenLight"></i>
+                                <span>View financial insights at a glance
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="flex flex-col-reverse md:flex-row w-full items-center space-x-4 ">
+
+                            <button
+                                class="relative bg-lightBlue flex items-center place-content-center md:justify-start text-white py-[14px] 
+                            p-[18px] md:pr-[90px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 self-stretch md:w-fit">
+                                Sign Up
+
+                                <div
+                                    class="w-12 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg] flex justify-center items-center">
+                                    <!--arrow-->
+                                    <svg viewBox="0 0 24 24" focusable="false"
+                                        class="w-[20px] h-[20px] -skew-x-[20deg] ">
+                                        <path fill="currentColor"
+                                            d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
+                                    </svg>
+
+                            </button>
+                            <!-- hyperlink -->
+                            <div class="flex flex-row items-center cursor-pointer group">
+                                <a href="#"
+                                    class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">Know
+                                    More</a>
+                                <i data-feather="chevron-right"
+                                    class="w-5 h-5 text-lightBlue500 group-hover:text-lightBlue transition-all duration-200"></i>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- background image for content box -->
+                    <img src="/assets/buisness-banking-Z1x0UUMF.png" alt="image"
+                        class="max-w-[600px] absolute right-0 bottom-0 z-4 hidden md:max-w-[400px] lg:max-w-[600px] md:block lg:block">
+                </div>
+
+                <!-- cards section  -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4 my-14">
+                    <!-- card box 1 -->
+                    <div class="w-full min-h-[15rem] relative cursor-pointer featureCard2">
+                        <!-- box icon image part  -->
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAABmJLR0QA/wD/AP+gvaeTAAABSElEQVRYhe2UPStGYRjHfzdCRN4GystksBhl8wGUwaTEVzAY+Bo+gExkUFKyMihGA4NIUkZ6Qgj5GdzqLI9zjqeH1Pkt5766/vd1/e+3AwUFBQVVQm1R19QLdewvDAyrp37yrL6qi2r4LQOz6oP6pM6p/ephNLStdlSzeaO6FJtdqiOJXEMid6WOVsPAoHoUm2yp7WV00+p9PJ6FrPVTz1AdB9aAVuAaWAX8ZsoQMBHH68BMCOEtq6FyJjb8OS9qf1qPLDtRCwzEsAl4TKQbgRfgPcb1cfy18lII4TbrglNR29VzdTnGdeqxupnQHKh7eWvX5dD2AF1AX4ybgTagO6Hp5HNnclGTd0I1+HcmLPOtmDx34gzYB3YAQgh36j5wktDsAk95TWR5olPAZN7CkRtgPoTwmKpMMbFSwc+qpPZWZKCgoKAA+AACc1Ow0tqD6gAAAABJRU5ErkJggg=="
+                            class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80] featureCardIcon transition-all duration-200" />
+                        <!-- svg box shape -->
+                        <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="none"
+                            class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
+                            style="stroke-opacity: 0.8">
+                            <path d="m 0 6 
+                    a 6 6 0 0 1 6 -6 
+                    h 250.32501220703125 
+                    a 16 16 0 0 1 11 5 
+                    l 77 77 
+                    a 16 16 0 0 1 5 11 
+                    v 126 
+                    a 6 6 0 0 1 -6 6 
+                    h -337.32501220703125 
+                    a 6 6 0 0 1 -6 -6 
+                    z" fill="#181C2E"></path>
+                        </svg>
+                        <!-- box content -->
+                        <div
+                            class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox">
+                            <div>
+                                <h3 class="font-mullish font-extrabold text-white leading-[1.2] text-[1.375rem]">
+                                    Current Account
+                                </h3>
+                                <p class="font-mullish text-grayText mt-6">
+                                    Current accounts for fast-growing businesses, supported by the
+                                    best-in-class technology
+                                </p>
+                            </div>
+                            <!-- hyper link section -->
+                            <div class="flex items-center cursor-pointer place-items-end">
+                                <a href="#"
+                                    class="font-mullish font-bold text-lightBlue500 transition-all duration-200">Know
+                                    More</a>
+                                <i data-feather="chevron-right"
+                                    class="w-5 h-5 text-lightBlue500 transition-all duration-200"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- card box 2 -->
+                    <div class="w-full min-h-[15rem] relative cursor-pointer featureCard2">
+                        <!-- box icon image part  -->
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAABbElEQVRYhe2VTU4CQRSEiQvEyMpTqIACUVGvohvv4RkI/yZeRdBDgIlbCca1YiJGyMfCInQ60zA9urMrmfSk5tWropl+k0oFBAQExACwD5Qj+AJQBwbAh64BUAPyf2GcATrADHgz+E2Dd2EGtIF0UvMt4EHNvoFrw/xe/EQ7UAG2dVWAJvClml6iEMCNGrwCRxH8CDhcoS+qBqDla17UFk6AY4MvGLzT3KgvaSemQM4nQEfJby2+Jr7u0aslTdUnwJNE5xb/KP7Eo9epNH2fAJ8S7Vj8WHzWo1dWmveo5xsuXey067HwiOzpCvCsddfih1rjv1DL2mHUQ1eAntYri7/TeuER4NLSrgdw4DiGeR2pCVCM0aec6BhK3HYMogU/WhVC5i+qbXiZq0EG6KqBOYrT/IxX9OuawJne9qzu2yxHcZdffA8yMrA/RmkNmCluTIFGYnMryB5QiuBzQBXoa0aMdV/1/s8DAgL+LebGrV0TcJmIWgAAAABJRU5ErkJggg=="
+                            class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80] featureCardIcon transition-all duration-200" />
+                        <!-- svg box shape -->
+                        <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="none"
+                            class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
+                            style="stroke-opacity: 0.8">
+                            <path d="m 0 6 
+                    a 6 6 0 0 1 6 -6 
+                    h 250.32501220703125 
+                    a 16 16 0 0 1 11 5 
+                    l 77 77 
+                    a 16 16 0 0 1 5 11 
+                    v 126 
+                    a 6 6 0 0 1 -6 6 
+                    h -337.32501220703125 
+                    a 6 6 0 0 1 -6 -6 
+                    z" fill="#181C2E"></path>
+                        </svg>
+                        <!-- box content -->
+                        <div
+                            class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox">
+                            <div>
+                                <h3 class="font-mullish font-extrabold text-white leading-[1.2] text-[1.375rem]">
+                                    Capital & Credit
+                                </h3>
+                                <p class="font-mullish text-grayText mt-6">
+                                    Instant additional cash and corporate cards designed for growing businesses 
+                                </p>
+                            </div>
+                            <!-- hyper link section -->
+                            <div class="flex items-center cursor-pointer place-items-end">
+                                <a href="#"
+                                    class="font-mullish font-bold text-lightBlue500 transition-all duration-200">Know
+                                    More</a>
+                                <i data-feather="chevron-right"
+                                    class="w-5 h-5 text-lightBlue500 transition-all duration-200"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- card box 3 -->
+                    <div class="w-full min-h-[15rem] relative cursor-pointer featureCard2">
+                        <!-- box icon image part  -->
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAABmJLR0QA/wD/AP+gvaeTAAAA0UlEQVRYhe2SPU5CQRgAZw2hsrDSEIiFjR138CoWnsZgQwWH8R5i50+IlY0VgbHZ4uXlxSwL8ppvms1m801mNwtBEARBGal2UL0B7oFBx/EGWKSU3mr9pREz/2ZW6uq6RSmPwEfDcQk8AOd5PzzAvT/qrfqZX+Arr/PS+bNjBADPwAh4BZ72dRwU0RFwB3yfLKIrIKX0XuOqimgFrFoB27zuatzFAY1P+KKOW+cjdalOewn4d9Sxus4BK3Vy0oAcca3+9BbQCLlSL3oLCIIg6JNfojWusuxK6n0AAAAASUVORK5CYII="
+                            class="bg-lightBlue absolute right-3 top-3 w-12 h-12 rounded-full z-[80] featureCardIcon transition-all duration-200" />
+                        <!-- svg box shape -->
+                        <svg viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="none"
+                            class="stroke-1 stroke-[#525a76] h-full w-full absolute z-[90] featureCardSVG transition-all duration-200"
+                            style="stroke-opacity: 0.8">
+                            <path d="m 0 6 
+                    a 6 6 0 0 1 6 -6 
+                    h 250.32501220703125 
+                    a 16 16 0 0 1 11 5 
+                    l 77 77 
+                    a 16 16 0 0 1 5 11 
+                    v 126 
+                    a 6 6 0 0 1 -6 6 
+                    h -337.32501220703125 
+                    a 6 6 0 0 1 -6 -6 
+                    z" fill="#181C2E"></path>
+                        </svg>
+                        <!-- box content -->
+                        <div
+                            class="z-[1000] absolute h-full w-full pl-5 py-6 pr-8 flex flex-col justify-between featureCardBox">
+                            <div>
+                                <h3 class="font-mullish font-extrabold text-white leading-[1.2] text-[1.375rem]">
+                                    Payouts
+                                </h3>
+                                <p class="font-mullish text-grayText mt-6">
+                                    Make simple, reliable & secure payouts to bank accounts, UPI IDs or wallets 
+                                </p>
+                            </div>
+                            <!-- hyper link section -->
+                            <div class="flex items-center cursor-pointer place-items-end">
+                                <a href="#"
+                                    class="font-mullish font-bold text-lightBlue500 transition-all duration-200">Know
+                                    More</a>
+                                <i data-feather="chevron-right"
+                                    class="w-5 h-5 text-lightBlue500 transition-all duration-200"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- demo  -->
+
+                <div class="w-full   items-center justify-evenly border border-slate-700 mb-24 gap-y-6  relative rounded-md p-8 hidden md:flex md:flex-col lg:flex-row lg:flex">
+
+                    <p class="font-mullish text-white text-xl">Check out the live demo to learn how RazorpayX works.
+                     <span class="font-bold"> No sign-up required!</span>
+                    </p>
+
+                    <button class="relative bg-lightBlue flex items-center 
+                          justify-start text-white py-[14px] px-[18px] md:pr-[90px] rounded-md
+                           font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200">
+                        Check out the demo
+                        <div class="w-12 h-[60px] bg-greenLight absolute right-6 skew-x-[20deg] 
+                              flex justify-center items-center">
+                            <!--arrow-->
+                            <svg viewBox="0 0 24 24" focusable="false" class="w-[20px] h-[20px] -skew-x-[20deg] ">
+                                <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z">
+                                </path>
+                            </svg>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+    </section>
+
+
+    <!-- feature section---3  --> 
+    <section class="bg-white relative">
+        <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+            <img src="data:image/png;base64,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" alt="image" loading="lazy" class="hidden md:block absolute w-[233px] left-[300px] -top-[6rem] z-10">
+            <img src="data:image/png;base64,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" alt="image" loading="lazy" class="hidden md:block absolute w-[233px] -right-[3.5rem] -top-[6rem] z-10"> 
+
+            <!-- grid section -->
+             <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-4 relative z-[100]">
+                <!-- item 1 -->  
+                 <div class="relative flex items-center z-0">
+                    <h2 class="text-deepBlueHead font-mullish font-extrabold text-4xl leading-[3.375rem]" >New in the
+                      <span class="text-lightBlue500">
+                          Razorpay
+                      </span> <br>
+                      Product Suite
+                    </h2>
+                 </div>
+
+
+                <!-- card 1 -->
+                  <div
+                        class="w-full p-10 max-h-[300px] bg-white cursor-pointer bg-no-repeat bg-[url(images\instant-settlement-bg.)] hover:bg-[url(images\instant-settlement-bghover.png)] hover:scale-105 transition-all duration-200 newFeatureCard">
+
+                        <img src="data:image/png;base64,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" class="w-10 h-10" />
+
+                        <h3 class="font-mullish font-bold pt-4 text-lg">Corporate Cards</h3>
+
+                        <p class="font-mullish text-grayText py-3 leading-normal">
+                            Simplify your recurring, international and team expenses with
+                            savings on every spend. Save upto 10 lacs every month.
+                        </p>
+
+                        <div class="flex items-center cursor-pointer group">
+                            <a href="#"
+                                class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">Know
+                                More
+                            </a>
+
+                            <i data-feather="chevron-right"
+                                class="w-5 h-5 text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">
+                            </i>
+
+                        </div>
+
+                    </div>
+                <!-- card 2 -->
+                 <div style="background-position: -2px -2px"
+                        class="w-full max-h-[300px] p-10 bg-white cursor-pointer bg-[url(images\upi-autopay-bg.png)] bg-no-repeat hover:bg-[url(images\upi-autopay-hoverbg.png)] hover:scale-105 transition-all duration-200 newFeatureCard">
+
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAABmJLR0QA/wD/AP+gvaeTAAACmklEQVRYhe2WS0gWURiG35NkCvpDZVkoBBIJWUQXo5CQIoIgwqBICOy2CMRaFF0WQbsW2iKIIBfVQogISkTCRRCtKiG7kVFQdDHESiGVCjJ7Wsz34zDO/Dnxj0L0bg5nvvN97zNzLnOk/8qSgGPAjKmG6AbuAfMn2zgHKAOqgfd4+gBUTob5SqAZ+ES4vgM7kzKfC7QAv8xsEGgFmoA+H0QnUJYEQAXwxkyeA7VAri/+1OAagelJACwEBszkTJgJcAvYlHVzK15gKx/gYIZx+YkAWPFTBnA28DwnZp0S4CZQHBdgli2+HqAgENsFHAec9euA5RlqHbaXOR0XYp8lngiJNQA/getAytbKN6Auolah74Vc2JhpERxbrL0aEktJOiepX1KnpGWSLko6CZz37xxJcs4NS+qQVCqpPA7EEklfnHNvIyA+O+cOSGqSVCWpT1KlGd0BSgI5j311JwxRLKknIpaSNCRJzrlLBrFfUqOkHZLaJHUBG305Q9bOjAORJylqFxSmi9ocL5WUL+mHpFx5UzQqqd53roxaS0TN8QJ6gb6IWBtQAywCbtsC3goUAZfxfmjbAjkXbNyGsJpRX+KJpOKQuZW86dgr6a6kdnnTtkLSM0mDkiqcc62BnLT5iwi/8cK7qAAcCol1Ae3AAusPAI+A1RG11qd/bhMGsMQSYAR4R+DWBKwN9OsznaJAh0E0xIKw5GbgNVAaO3msxm4DeAXk/U2BOcDsP4wpyBCrAoaBUWBzbICJyHbIg4jYdjuqAY4kYV4EXDGDl4HYKuCGxUaAo0kA1AAfGVMv3o2qxdZPWt1AddYBDGIN0E+4vuLdG2qBqPMnayDljN057wPrgMXBrZy4gHnAQ+DapBqHgKSAPVMK8c/pN7EH3dg1QqsSAAAAAElFTkSuQmCC" class="w-10 h-10 bg-lightBlue rounded-full" />
+
+                        <h3 class="font-mullish font-bold pt-4 text-lg">UPI AutoPay</h3>
+
+                        <p class="font-mullish text-grayText py-3">
+                            Allow customers to set up recurring payments using UPI Apps.
+                        </p>
+
+                        <div class="flex items-center cursor-pointer group">
+                            <a href="#"
+                                class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">
+                                Know More
+                            </a>
+
+                            <i data-feather="chevron-right"
+                                class="w-5 h-5 text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">
+                            </i>
+
+                        </div>
+                    </div>
+                <!-- card 3 -->
+                 <div style="background-position: -2px -2px"
+                        class="w-full max-h-[300px] bg-white p-10 cursor-pointer bg-[url(images\magic-checkout-bg.png)] bg-no-repeat hover:bg-[url(images\magic-checkout-hoverbg.png)] hover:scale-105 transition-all duration-200 newFeatureCard">
+
+                        <img src="/assets/magic-checkout%20(1)-CiYXbitb.png" class="w-10 h-10 bg-lightBlue rounded-full" />
+
+                        <h3 class="font-mullish font-bold pt-4 text-lg">Magic Checkout</h3>
+
+                        <p class="font-mullish text-grayText py-3">
+                            Improve your order conversion rates & reduce return-to-origins.
+                            Boost your business by 20%
+                        </p>
+
+                        <div class="flex items-center cursor-pointer group">
+                            <a href="#"
+                                class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">
+                                Know More
+                            </a>
+                            <i data-feather="chevron-right"
+                                class="w-5 h-5 text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">
+                            </i>
+                        </div>
+
+                    </div>
+                <!-- card 4 -->
+                 <div style="background-position: -2px -2px"
+                        class="w-full max-h-[300px] bg-white p-10 cursor-pointer bg-[url(images\payment-button-bg.pngpayment-button.png)] bg-no-repeat hover:bg-[url(images\payment-button-hoverbg.pngpayment-button.png)] hover:scale-105 transition-all duration-200 newFeatureCard">
+
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAABmJLR0QA/wD/AP+gvaeTAAACPElEQVRYhe2WO2sVQQBGz4gm0SQKpvCFopJGouCLIMHKYKMoNj5+hWhroY29YhMwVUwjdmIhIqaIkRSiTQyCr0KwMBrxgTFR9FjsXLiE683c3S0s9jTDzu6c+XaYF1RUVFRUVFT8R4QyJOoy4DBwCNgItCc0+wG8Be6FECbKyJGEuledshjj6raU/gqNsDoA3AdWATPATeAl8DOheQewEzgDdMf2AyGE10UyNQvbqb6LI3Rb7c7pWa9ORs/jOL3KRz0XO5lWOwq6etQP0Xe82bdF/uZYLK+EEOYLeAghzALXF3kbUiTw1lg+LeCo50kstzf7aHmrVrUfOA2si1UpW1gKtWnVdMEmB1a7gGGyVV3PIDDZUrTGDMbyWWGT2q4+iotiQR1Wr8bnj+rmgv490ftH3VdG4Msx3Ht1d6wL6kSsf6UeyOk+qs5Ez42lvl/y4FBXkm3qXcCREMLduncbgAfAjlg1RXZw/E7I2gb0Ab3xeTz6vye0bRp4MP79i3+8X61eU+dbOYvr+KJeUttS8qQsutr8nG70MoTwFTirXgAOkl1+lvJeBDYB54GhEMJCStgk1JNxJMZKdL6Jzv1lOevlvVE+p/aU4Our83WWkbFRJ7UtbUTNfcNTV6hj0TVaZsbFHfWb7ZOqt9QtORx9dWFn8zighfuwegoYITtCJdu+viU2XwvULuifgBMhhIct5MyHuku9o/7KsX3NqaN5R7ZGrvmoriE7LLoSm3wGnhc+FCoqKioqKioqCvIXFsI66VLzHdMAAAAASUVORK5CYII=" class="w-10 h-10 bg-lightBlue rounded-full" />
+
+                        <h3 class="font-mullish font-bold pt-4 text-lg">Payment Button</h3>
+
+                        <p class="font-mullish text-grayText py-3">
+                            Accept payments on your website, in less than 5 minutes. No
+                            developer needed.
+                        </p>
+
+                        <div class="flex items-center cursor-pointer group">
+                            <a href="#"
+                                class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">
+                                Know More
+                            </a>
+
+                            <i data-feather="chevron-right"
+                                class="w-5 h-5 text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">
+                            </i>
+                        </div>
+
+                    </div>
+
+                <!-- card 5 -->
+                 <div style="background-position: -2px -2px"
+                        class="w-full max-h-[300px] bg-white p-10 cursor-pointer hover:bg-cover bg-[url(images\instantsettlement-bg.png)] bg-no-repeat hover:bg-[url(images\instantsettlement-hoverbg.png)] hover:scale-105 transition-transform duration-200 newFeatureCard">
+
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAAABmJLR0QA/wD/AP+gvaeTAAABQklEQVRYhe2UwSsEcRTHv29tUg7K2lycyMEe3e3NiYRc9qiIklzEf0GpLVH+AyVXJTcX5eKiVU4OyEXSlvg47CtjS+3sMFP6fWoO83tvvu8zzWukQCDwXwF6gRNgOkuJHRpUk+TkEgiMSFr224dMJCRtSbqW9CLpMYlEWwAT/hkmgQ9gLm2BPHAFHAEDLlNOkplv45kVScOSZiQV/WwXeI301Mys0mqgxZkOFCTVJB2Y2TowJGmxqW1WUp+kgpkRJ79ViSpwD/T8UB8E6sDarw/3ASXgDWh+82jPIXADdP6VxLYv4SVwEbk2vF72+lTc7DiLuS+pru97tCSpG8ip8d84NbPjuBKJAJ6AVWAeeAdG0xbo8MELwB2wl6qASxR9B86BZ6A/C4kSX2ymLuASYy5wC3RlJVEEzoDxTAQCgUBafAIUpAZg4I5BMQAAAABJRU5ErkJggg==" class="w-10 h-10 bg-lightBlue rounded-full" />
+
+                        <h3 class="font-mullish font-bold pt-4 text-lg">Payment Button</h3>
+
+                        <p class="font-mullish text-grayText py-3">
+                            Accept payments on your website, in less than 5 minutes. No
+                            developer needed.
+                        </p>
+
+                        <div class="flex items-center cursor-pointer group">
+                            <a href="#"
+                                class="font-mullish font-bold text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">
+                                Know More
+                            </a>
+                            <i data-feather="chevron-right"
+                                class="w-5 h-5 text-lightBlue500 group-hover:text-lightBlue transition-all duration-200">
+                            </i>
+
+                        </div>
+                    </div>
+
+             </div>
+        </div>
+    </section>
+
+
+    <!-- core features section -->
+    <section class="w-full bg-[url(images\core-features-sectionBg.png)] coreFeaturesBg bg-no-repeat bg-cover bg-center mt-6 md:mt-14 relative z-[1000]">
+        <div class="w-10/12 md:w-11/12 max-w-[1080px] mx-auto relative pt-4">
+            <h2 class="font-mullish font-extrabold text-2xl text-center text-white">Features</h2>
+            <div class="w-6 h-1 bg-greenLight mx-auto my-4"></div>
+            <p class="font-mullish text-center max-w-[450px] mx-auto text-white">
+                Empower your business with all the right tools to accept online
+                    payments and provide the best customer experience</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[2rem] mt-8">
+                <!-- card1 --> 
+                 <div>
+                        <img src="data:image/png;base64,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" />
+
+                        <h3 class="font-mullish text-white text-lg font-extrabold my-4">
+                            Instant Activation
+                        </h3>
+
+                        <p class="font-mullish text-white opacity-[0.87]">
+                            Get activated and transact within 2 minutes. Completely online
+                            onboarding with minimum documentation.
+                        </p>
+
+                    </div>
+                  <!-- card 2 --> 
+                 <div>
+                        <img src="data:image/png;base64,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" />
+
+                        <h3 class="font-mullish text-white text-lg font-extrabold my-4">
+                            Easy Integration
+                        </h3>
+
+                        <p class="font-mullish text-white opacity-[0.87]">
+                            With plugins for all major platforms and languages, integrate and
+                            go live with Razorpay in less than an hour.
+                        </p>
+
+                    </div>
+
+                  <!-- card 3 --> 
+                 <div>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAvCAYAAACYECivAAAABmJLR0QA/wD/AP+gvaeTAAAFP0lEQVRo3uWZe0xbdRTHMTExykNYwBjcH0t0iluM0X82YqDb3KaiWyLOzWRzGRuaTBcXDaK8IibSDpjAgDGdsizoBhkMMcKmMB7j0ddYt8JGKYXyaCkwoAUKtFxoj7/bBxT6u5dbuLQYT/JNmt+99/w++d3zO+d3T728GBoAvILUA+6zIaRdXis19PAVcL81rwa40gPA/f9v4GnjLNyVaWjVohgCk8m8PoA/T70BT4T+sKyKKh+4Fzi5Fh4fMYB8qbcR3RRUi5W0qrvbA0Zizn3ASWLYmiAEqWIMPGF9LsHGC+Aggp1CAhwwGZvaCQNWhplZyz2zcybKe0jN0K9+N2PYRAGcRKAmEpYK+PTZvynjdmNEJpjRXvs4qZQ2vkOj8umAFYxgEwRw2BGWCljZr4NfyyRY3RIpLfe0KYcp7yElbFXTAbcvCxsnglAESDjCUgG7wR7Swn7TDE+jUOhdCutBYCn9JhNBtiPkkQIlBOzNtMSa/RU72nc/1zLKw3YdiL1meS7+fLXTtUNxJThgCV0ovIgg5xyBNx26NO8QByxVDEL6b3zGqhJ1WSnaB5yu4fwju0O90YSQvzQMgiJyaIHdYAJ8JROCHwKcXofAjficK4ITuI22HHBaQROEfJC7KmVcEdAB38ZvNiEUrwS4XtILCWgDrUaN9/soaVHhqaWK36GVAK+1TREgds4O9RCEg10PwFojtOJWd/t6BR6Ygk7nDceHtz0J3D8JcPEhwDkpQBbSBXTW79BZr6knMae1BBG870ngih7neYsUtsOwHnpx5fgtTwKTK7p03oz7KEOga11jIHf+ohDAtrUENqLz+T8ocynHMQeFYes8pyv1EFWkgqjCPvji5rhl7A5qo8h1mNKczIcNawU8QQDktFh9JYkAypALmdYq8jc5Zp3nHHiHcy3y25kKsfUEJKLx8m6KwoEe0rANTK5sbgt+IRx1qkI3D2vXiWKN5dp1BZzBl2YhFLINXKNe7Cu2fga2xVTAvizJorEt0YVOwC8d+x0SmwhoHIZgks87LOVNn/CUC36hyRvsG+8o28BD0wDfixfAXjhyeR7oucifYMsnRRD4TpYTrF3B+3LM3mHcq+h3HZLJOs4rtwDHSMEbOdazHcO1tlXeHnODEsxF1Tumtzy2gVV6q5+DF2XsA38rgE3I+QybwN0TC76eP3yZXWDb530qm8B/Khd8vfrZdVoYHw4XfHfwXAO2xXLHaoHJKsUfAEsuJf18XWdEvvAbLPR4PtxCPTiyQzSHOkllt+XjwREZbYyALZWPD6+hSQwrASZbASWd1tJKPh8vMMOnpYOw+WgBFvaN6EswaSCcczgxR2x8L/MBI2Bbm2o/mnDWVWDHQnGqQgv+u9NpX3HDvV5KX3ypqoMxsD03P7s/z+wKcPq9BeDj6GxABxu4J23ZRrcvhzvKGJi0d39sPhkYkW1aC+Bn9qYv68+XwxtyCZi0yEzp6yFRV0eYAOe0LD4j+O8+Swvd1KIyUvlCTcQel0Jiyf8Fj6WVyUpbu4Zp32Hn+OJNF9dkgugSzaKy7KjNkdlSlBnMmK9l88sf5opWDmyzL6+pnsz6S15RI+kj6BrRJEGDZmG1v6qegoA9+NUOOXBe0t4zrJnPNKrR/q0f5YkYpzXGDe9i2Y7scnlVUZ1iVNQ2OKtQ6cwjY9MwpjeC+tEEdKi0pl/E40Rmg/YR72ZvgQ+HV0sXHv47z6gDdqWq0G8zTXH5w8tdhiaUsVCaa9wDG5ZyjPXDz5oCc7iF/ylgnzBu0FPhKSXoQF61KoXzsv4Fy0bH7+DwO6MAAAAASUVORK5CYII=" />
+
+                        <h3 class="font-mullish text-white text-lg font-extrabold my-4">
+                            API Driven
+                        </h3>
+
+                        <p class="font-mullish text-white opacity-[0.87]">
+                            Build your business for scale with our complete API-driven
+                            automation that requires zero manual intervention.
+                        </p>
+
+                    </div>
+
+                  <!-- card 4 --> 
+                 <div>
+                        <img src="data:image/png;base64,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" />
+
+                        <h3 class="font-mullish text-white text-lg font-extrabold my-4">
+                            100+ payment modes
+                        </h3>
+
+                        <p class="font-mullish text-white opacity-[0.87]">
+                            Offer your customers the luxury of all payment modes including
+                            Credit/Debit cards, Netbanking, UPI, Wallets etc.
+                        </p>
+
+                    </div>
+
+
+                  <!-- card 5 --> 
+                  <div>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAC6FBMVEUAAAAA//+A//////9Vqv////+Av/9mzP////9ttv+Av/////9xxv900f////////8NNoYNM4D///////+Ayv////////////////////////8HO4MGOIP///99yv////////////////////////97xv////////98yf////////98yf////97x/////////////////////+14v96x/////8IOoP///97yP////////98yP8HOYR7yP////8HOIP///96yf96yP////98yP97yf////98yP////97yP96yP8HOIR7yP97yP97yP97yP////97yP/////////m6vIGOYOl2v////97yP////96yP////////8HOYR7yP8HOIR7yP97yP97yP97x/////////////////////97yP8ZR43///8HOYV6yP/o9f////////////97yP////////+V0/////97yP////8TRY3///////+s3P////91t+x7yP////////+Cy/8HOYQIOoQJO4UQQIgSR5ATR5EVS5MaS5EgTZEiT5IuWJc1XZs1ZKM2XptBaKFosetpsuxsirZ7yP98yP99yf9+yf9/yv+Ayv+Byv+By/+Cy/+Dy/+Gzf+Hzf+Lzv+N0P+S0f+UqsqU0/+V0/+X1P+Y1P+c1v+d1v+e1v+g1/+h2P+i2P+j2f+l2f+n2v+p2/+r3P+s3P+t3f+u3f+w3v+xwdix3v+04P+14P+4yuG44f+54v+64v+7zuS84/+/5P/A0OTB5f/D5v/I6P/K1ufN1+bN6v/S7P/U7f/V3ura4e3b4u3c8P/c8f/d5O7e5e/e8f/f8v/g5vDh5/Dh8v/k8fvk9P/l9P/m6/Ln7PPn9f/o9f/q9v/r9//s7/Xt8Pbt+P/u8vfu+P/v+P/x+f/y+f/z9vnz+v/0+v/19/r2+//3/P/4+vz4/P/7/f/8/f78/v/9/v/+/v/+///////OA3doAAAAg3RSTlMAAQICAwMEBQUHCAgJCwwPExQVFxgYGRwgISMnKSkrKywvMDEzOjo9QkZKTExNUVZXYGdoe3+AgIOEiYqLi4uMkZKUnqGkpKepqqussLS2uLi6vsHDxsbGx8fIyM7Pz9DQ0dLT19ja293f4OPl5eXn6ers7vHy9fb29/f4+vv8/Pz9/iS4AIkAAAABYktHRPer3Hr3AAACu0lEQVRIx5XWdVQUQQAG8AMMBBUFFVsM7G5RD1QMbDGxu7HQU0FFHDsQY+/EQMVWVCywMLC7A1sEsQ5F8OZf93Z3YmdObv3eu/d2336/NzM7+3ZPp1Pi4t+jTn7vgG7FdNri2F4QhHDxN6CQhnZ5/4CRAsqEzh2r2wO9BHWCHXLvF5zNAGFKSFjI2J762oVt9l3asH3hiBlKMXSoyvdrBVsrW81K9kpi23WoJLASC4ZLDdOx40nvLSfxGJssSMz3cVaDrri0JT3DiI5jIUl/DxVoKRU2o6v7ZHCYAnBcKapfYBRZ60OzCR3GfKPF+OIEtMX16IvwKsEHLLQIIuuYobQfvP2Vdc1E3dovNIB6DJordyUjKz6G3op4VR8urIxAnoFyYVfm02iqvyNTDWBvPERrpXIw+7aRgDjIphoC3VEnASYTsJMDnRAYikvJMJHcMgsLQt0U4D0ClYy3vu9HA9zhRoB10RAOjbmn9UQ234d+eNn5FrEg3UYfBmLgdpTpx9rqw0kYlPx8+cwh3N6TeOGV9frXtLRnjx/dvPcHAQMGFaynZ8XudnEj4nKsZ7+jAMq6VCScEChtPctJSkiBn86dknc4FYClqxURqYgwPII7P983YNVruFstppFHfCYHnoONEP5crBJBBAziwH2w5gc8jdchiXYE6DlwF4CVa5dgAKJE0YCAGhy4AZhEfozwJCDvVBZcAZzoQ785WrDgPAfAxKIUcDcw4BIPwJAilGjCgJcr7AjX0WrwbsNyG2IYNSsv9aRSBLuiXgQNXgj2RUNaPBGf3fXLbIgu1MLrhxLwQfiHaErvRsUxREjvD35WvupPhWuzOQjI3xZW+HLfLw+f6SqxYG7ufTHONf0GS4uxzJvVr5Fjmcl2+lKcPL2qlCshHxPRSuOfCiS09pHQ3pfF//R1urJ9yX79BcQ9NB6szUzCAAAAAElFTkSuQmCC" />
+
+                        <h3 class="font-mullish text-white text-lg font-extrabold my-4">
+                            Simple Pricing
+                        </h3>
+
+                        <p class="font-mullish text-white opacity-[0.87]">
+                            Our innovative payment solutions with competitive pricing make
+                            payments simpler.
+                        </p>
+
+                    </div>
+
+                  <!-- card 6 --> 
+                 <div>
+                        <img src="data:image/png;base64,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" />
+
+                        <h3 class="font-mullish text-white text-lg font-extrabold my-4">
+                            Best in Industry Support
+                        </h3>
+
+                        <p class="font-mullish text-white opacity-[0.87]">
+                            Always available email, phone and chat based support to help you
+                            in your every step.
+                        </p>
+
+                    </div>
+
+                  <!-- card 7 --> 
+                 <div>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAsCAMAAADPc2F3AAAChVBMVEUAAAAA//8AAIBAgL+q1f9ttv+22/8AVY7///+l0v+AqtVdl8Wx3v+/5P9GhMFNiMR3zP+33/////95yf+u3P/d9P88d77///+OuNl9x//E5v+54v/B5v++4/9sm8t6yP++4v+UvuNAgMK85P87fLzA5f92oc3F5/+HqtPB5f////87erk3dLfF5/96yP80cLKKrdXK6P96yP/M6f/K6v9zmsfO6v/O6//////T7f9pk8J8yP97yP8uaqv///9ii7z7/v8pY6b///8pY6Z6yP8hWp/g8v8fV5zk9P8fVZrl9f/n9v////9Kc6pDbabp9//s9/8YT5Xv+P8YTpRwkr3w+f8RRo0yYJt7yP////8TR48hWZ70+v/1+//2+//3/P8LPoYMQIcOQIcPQYgQQogQQ4sSQ4kURYoWRosYSY0aS48aUZYcTI8fTpAgT5AiWp4jUZMlUpMnVJQnVJUnVZQoVZUsWJY3Y545Yp06Y507ZJ48ZZ4+Zp8/Z6BHiMdKcKVOkc9RdalUeKpZe6xafa1bfq5cfq5hgrFkrOdlhbNste97yP98l758yP9+yf+Aw/WAyv+BxfmCnMGCy/+EncKEnsKEzP+FnsKFn8OHveuLzv6Mz/+NpceOwOqR0f+V0v6Yrcye1v+ittGjv96lv9uo2/+rvNWsvdat3P2uv9ewwNixwtmy2/u1xdq44f++zN/A5f/G5//L6f/P4/XQ7P/R2+jT7f/V7f/W5vTW7v/a7//b8P/c8f/f8v/k6vLn9f/o7fTs9//u8fbv8vfv+f/x9Pjx+f/09vn09/r19/r2+Pv2+//3/P/4/P/5+vz6+/36/f/7/f/8/v/9/f79/v/+//////8Q95SSAAAAYHRSTlMAAQIEBgcHCRAREhYXHB0eHiAhJiwtLzM2Nzw+Pj9AQUdKUF9jamxzdXd/hoqMkJifqKuusrO4u7vDxMTMz9HW1tna4OPs7PDw8vP09vj5+fn6+vv7/P39/f3+/v7+/v5bskbsAAAAAWJLR0TW57VqqQAAAhlJREFUOMtjYNDyuYYPOIkzQAFH5DX8wAKmUoiAwmt26CpPwGROXUMVQVe5Pu0ohLE2A6p0WeZ5rCqXJ+yDMBYlHIIwFiScxKby2OL8zWeIUXmwr7u7e/ZVIlTu6gaBC1hVOhCt0l8YWeWRyUCF85Btv7JhZsOK3SDWfhcBZB+dXZK94xKyj3aCLJkGVtltw4ovlLaAVPZBVHbr4VO5DaRyAlRlhCQelWeW9nfM3whV2W1NVByBVHbLE63SCIfKy5Nqq6tLEiqrQaA8Hwii+bGrXJmAAbSxq5yBqdIWu8rpmCrdGRhEiVMZzMAghUNlUkU1HFSlJKQyMCigqLy6aW7dmr0glU3Iua4zIYGdQQZF5R5Q4E2eimlmIhODIIrK7eCEOgXTnWHAoI9FVglObL0gMxMKy+CgKCHBE6jSA1nl6YUTu2atA7mzEdmd7QmOQJWW2P2e3twGBy2ZCfpAlarEhGeiGFAlYxARKl3Bqd6MCJU6YJW8cUAFqxIOoKqsmYMEQpgh2dMYVLCtvoaqsucwEjCAZnk2b6QAwWa7M6wYYZCNx1SZDA7zPJDCQD64Sgb1i3CVy5KOg1XOAfMu5yQkRCkxIAFduNJzW6+BVea2gsK8PiEhS4UBBWjGIbkV2Z2lGgxoQNoLq0pfCQYMwGIYg6Gy2JQBK+AxCUBRGW7FxYALMCqbu4VeBaks8LNXYyAEOEUU5bgxhQEbKLhwM4/wLAAAAABJRU5ErkJggg==" />
+
+                        <h3 class="font-mullish text-white text-lg font-extrabold my-4">
+                            Dashboard Reporting
+                        </h3>
+
+                        <p class="font-mullish text-white opacity-[0.87]">
+                            Real-time data and insights on your Razorpay Dashboard to make
+                            informed business decisions.
+                        </p>
+
+                    </div>
+
+                  <!-- card 8--> 
+                 <div>
+                        <img src="data:image/png;base64,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" />
+
+                        <h3 class="font-mullish text-white text-lg font-extrabold my-4">
+                            Secure
+                        </h3>
+
+                        <p class="font-mullish text-white opacity-[0.87]">
+                            PCI DSS Level 1 compliant solution which removes your burden of
+                            regulatory compliance.
+                        </p>
+
+                    </div>
+
+
+            </div>
+        </div>
+    </section> 
+
+
+     <!-- Join Razorpay Start -->
+        <section class="bg-[#f5f8fe] -mt-[200px] relative z-[100] pt-40 pb-12">
+
+            <div class="w-10/12 md:w-11/12 max-w-[1080px] mx-auto relative pt-4 md:flex">
+
+                <!-- Left Part Text -->
+                <div class="md:w-[calc(100%-500px)] md:flex md:flex-col md:justify-center">
+
+                    <h2 class="font-mullish font-extrabold text-2xl text-deepBlueHead">
+                        Join the 50,00,000+ businesses using Razorpay
+                    </h2>
+
+                    <div class="w-6 h-1 bg-greenLight my-4 mb-10"></div>
+
+                    <p class="font-mullish">
+                        We make it easier for you to focus on building great products while
+                        we work on simplifying your payments. Become one of us by joining
+                        thousands of our happy users and simplify the online payment
+                        experience for your customers.
+                    </p>
+
+                    <p class="font-mullish mt-6">
+                        Focus on your business while we handle the complexities of payments
+                        for you.
+                    </p>
+                </div>
+
+                <!-- Right Part Image -->
+                <div class="h-[500px] md:w-[500px] overflow-y-hidden mt-24 md:mt-0 relative">
+
+                    <!-- gradient of the image at top-->
+                    <div class="absolute w-full h-[200px] top-0 z-20"
+                        style="background: linear-gradient(180deg, #f4f8ff, #fff0)"></div> 
+
+                    <div class="absolute w-full h-[200px] bottom-0 z-20"
+                        style="background: linear-gradient(0deg, #f4f8ff, #fff0)"></div>
+
+                        <!-- gradient of the image at bottom  -->
+                    <img src="/assets/companies-r_bx1HpB.png" loading="eager"
+                        class="absolute w-full object-cover h-full md:h-auto z-10 companiesList" />
+                </div>
+
+            </div>
+
+        </section> 
+
+        <!-- testimonial section  -->
+
+        <section>
+
+            <div class="w-11/12 max-w-[1300px] mx-auto relative py-20">
+
+                <img src="data:image/png;base64,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" loading="lazy"
+                    class="hidden md:block absolute w-[200px] -z-[1] top-[8rem] left-[2rem]" />
+
+                <h2 class="font-mullish font-extrabold text-2xl text-center text-deepBlueHead">
+                    <span>An Experience</span>
+                    <br />
+                    <span>People Love to Talk About</span>
+                </h2>
+
+                <div class="w-6 h-1 bg-greenLight mx-auto my-4"></div>
+
+                <!-- Left Button -->
+                <button
+                    class="w-[36px] h-[36px] md:w-[96px] md:h-[96px] bg-[#f4f8ff] rounded-full absolute left-0 top-1/2 -translate-y-1/2 grid place-items-center">
+
+                    <div class="w-[65%] h-[65%] bg-[#f4f8ff] mix-blend-multiply rounded-full grid place-items-center">
+
+                        <i data-feather="chevron-left" class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400">
+                        </i>
+                      
+                    </div>
+
+                </button>
+
+                <!-- Right Button -->
+                <button
+                    class="w-[36px] h-[36px] md:w-[96px] md:h-[96px] bg-[#f4f8ff] rounded-full absolute right-0 top-1/2 -translate-y-1/2 grid place-items-center">
+
+                    <div class="w-[65%] h-[65%] bg-[#f4f8ff] mix-blend-multiply rounded-full grid place-items-center">
+
+                        <i data-feather="chevron-right" class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400">
+                        </i>
+                    </div>
+
+                </button>
+
+                <!-- Main Content -->
+                <div class="max-w-[960px] mx-auto flex flex-col xl:flex-row items-center xl:space-x-[10rem] my-20">
+                    <!-- left part -->
+                    <img src="/assets/testimonial-D0dsfJzD.jpg" width="320px" height="320px" loading="lazy"
+                        class="object-cover rounded-xl w-[250px] h-[250px] md:w-[320px] md:h-[320px]" />
+
+                    <!-- Mobiles -->
+                    <div class="xl:hidden mt-4">
+                        <p class="font-mullish font-extrabold text-2xl text-center">
+                            Lorem Ipsum
+                        </p>
+
+                        <p class="font-mullish font-medium text-center my-2">
+                            CEO, XYZ Engineering Company
+                        </p>
+
+                        <img src="/assets/fake-company-logo-DD6BWfNh.png" width="80" height="40" class="object-cover mx-auto" />
+
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAABaCAMAAABqm0NPAAAAnFBMVEUAAAAAAAAAAP8AgICAgIBVVVVVVapAQIBAgIAzZmZmZmZmZplVVYBJSW1AYIBgYIBVVXFNTWZNTYBNZoBdXXRVVYBOTnZOYnZJW21JW4BbW4BVVXdQUHBQYIBLWnhVVXFVVYBRXnlNWXNVVXlRXXROWXpVVXVVYIBSXHpOWHZMVXFMVXtVVXtVXntSW3ZPWHJPWHtNVXdVVXf///9ImvPuAAAAM3RSTlMAAQECAgMDBAQFBQUGBwgICQoKCgsMDQ0ODg4PEBAREhITFBUWFxgYGRobGxsbHB0dHh7Ug+2GAAAAAWJLR0QzN9V8XgAAAmZJREFUaN7tmFFz2jAQhM+OwYlriENIaEoJAYNr0thg/f8f14d2UjLRSrdopn3RPXvnE7d3pxNiuJjJWcxIsURYhEVYhEVYhEVYhEVYhEVYhP1X2B0LOwXAqn8Ju2VhfQBsysK6ANiEhR0CYAULawJgYxa2C4ClLGwbAGNLWZ5DYKThsgiB7UlYFQLbkLAyBLYkYWkIbE7CSJM/wkoWVgfAkoGErQJgZFrwdXu8t8VYVOW4s4pFRugchfjjEWhbJECpWChgsEJyIICpUMDkCMQP4HvULMNIAavJk0LTFgGmwTz+YF0+ixzBlkDwHQkmCloLtK+J/Xu4StQKGJzFc/J0mla7MaQJ8HQbxU+DG9MdcBnN06H0w+BV3yZct2gaO4Nbz6NdgHeDyk97Qdo+4+ajOSSXz0fzbBc8QMHK/9PgnjvYGzV5IwW6xwyokSdWoKp+kJe0YzOvehQOU9I11J0a10w34maW6XNvQeIta0f2mmm8tjn28CU3RhQzcoSf5oN1LuSO19aTj+aw/FRy5Q+Opyt/82orksQhOPrm/xdHXprUdmU7BL3vIv3m2Lt3CZdI89PXAK5naM0K2syzILie82tbRTr+Xep8trmehvuUau3GO0ccrb22jwX0V8U29V9sKRh5J7T5J1bbBs0qLlJYXXjDV2JmWRH6W9FFZZnIe9cDpfxUVW0u2vi8gm7cU/z+ArveY6u0CxxvJUx89Lyf+hXrs88r4eLc80aT/+T9nj8Uwkbekfm/+nMB1JnwMfldYcNXdTJa3q6/i+SJaRcRGR/McSYXRjWY9oYRXO8LuTjmVrt+ARw23bNX1j5eAAAAAElFTkSuQmCC" class="w-[35px] h-[40px] -mb-2" />
+
+                        <p class="font-mullish text-3xl font-extralight max-w-[300px]">
+                            Readymade Closed Wallet Solution For Quick Refunds
+                        </p>
+
+                        <button class="italic underline text-sm text-grayText">
+                            Learn More
+                        </button>
+
+                    </div>
+
+                    <!-- Desktop -->
+                    <div class="hidden xl:block max-w-[400px]">
+
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAABaCAMAAABqm0NPAAAAnFBMVEUAAAAAAAAAAP8AgICAgIBVVVVVVapAQIBAgIAzZmZmZmZmZplVVYBJSW1AYIBgYIBVVXFNTWZNTYBNZoBdXXRVVYBOTnZOYnZJW21JW4BbW4BVVXdQUHBQYIBLWnhVVXFVVYBRXnlNWXNVVXlRXXROWXpVVXVVYIBSXHpOWHZMVXFMVXtVVXtVXntSW3ZPWHJPWHtNVXdVVXf///9ImvPuAAAAM3RSTlMAAQECAgMDBAQFBQUGBwgICQoKCgsMDQ0ODg4PEBAREhITFBUWFxgYGRobGxsbHB0dHh7Ug+2GAAAAAWJLR0QzN9V8XgAAAmZJREFUaN7tmFFz2jAQhM+OwYlriENIaEoJAYNr0thg/f8f14d2UjLRSrdopn3RPXvnE7d3pxNiuJjJWcxIsURYhEVYhEVYhEVYhEVYhEVYhP1X2B0LOwXAqn8Ju2VhfQBsysK6ANiEhR0CYAULawJgYxa2C4ClLGwbAGNLWZ5DYKThsgiB7UlYFQLbkLAyBLYkYWkIbE7CSJM/wkoWVgfAkoGErQJgZFrwdXu8t8VYVOW4s4pFRugchfjjEWhbJECpWChgsEJyIICpUMDkCMQP4HvULMNIAavJk0LTFgGmwTz+YF0+ixzBlkDwHQkmCloLtK+J/Xu4StQKGJzFc/J0mla7MaQJ8HQbxU+DG9MdcBnN06H0w+BV3yZct2gaO4Nbz6NdgHeDyk97Qdo+4+ajOSSXz0fzbBc8QMHK/9PgnjvYGzV5IwW6xwyokSdWoKp+kJe0YzOvehQOU9I11J0a10w34maW6XNvQeIta0f2mmm8tjn28CU3RhQzcoSf5oN1LuSO19aTj+aw/FRy5Q+Opyt/82orksQhOPrm/xdHXprUdmU7BL3vIv3m2Lt3CZdI89PXAK5naM0K2syzILie82tbRTr+Xep8trmehvuUau3GO0ccrb22jwX0V8U29V9sKRh5J7T5J1bbBs0qLlJYXXjDV2JmWRH6W9FFZZnIe9cDpfxUVW0u2vi8gm7cU/z+ArveY6u0CxxvJUx89Lyf+hXrs88r4eLc80aT/+T9nj8Uwkbekfm/+nMB1JnwMfldYcNXdTJa3q6/i+SJaRcRGR/McSYXRjWY9oYRXO8LuTjmVrt+ARw23bNX1j5eAAAAAElFTkSuQmCC" class="w-[35px] h-[40px] -mb-2" />
+
+                        <p class="font-mullish text-3xl font-extralight">
+                            Readymade Closed Wallet Solution For Quick Refunds
+                        </p>
+
+                        <button class="italic underline text-sm text-grayText">
+                            Learn More
+                        </button>
+
+                        <p class="font-mullish font-extrabold text-2xl">Lorem Ipsum</p>
+
+                        <p class="font-mullish font-medium">CEO, XYZ Engineering Company</p>
+
+                        <img src="/assets/fake-company-logo-DD6BWfNh.png" width="80" height="40" class="object-cover" />
+                    </div>
+                </div>
+
+                <!-- 6 Dot Div -->
+                <div class="hidden lg:flex items-start mx-auto w-max space-x-2">
+                    <div class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"></div>
+
+                    <div class="w-[10px] h-[10px] bg-lightBlue300 rounded-full cursor-pointer"></div>
+
+                    <div class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"></div>
+
+                    <div class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"></div>
+
+                    <div class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"></div>
+
+                    <div class="w-[10px] h-[10px] bg-gray-300 rounded-full cursor-pointer"></div>
+                </div>
+            </div>
+
+        </section>
+
+         <!-- -----------------------------CALL TO ACTION Start----------------------------- -->
+        <section class="relative flex items-center ctaSection z-[100]">
+            <div class="bg-[url(images\CTABg.png)] w-full h-full bg-center absolute ctaBg -z-[10]"></div>
+
+            <div
+                class="w-10/12 my-10 md:my-0 md:w-11/12 max-w-[1080px] h-full mx-auto relative flex items-center space-x-20 justify-between">
+                <!-- Left Part -->
+                <div>
+                    <h2 class="font-mullish text-white font-extrabold text-2xl text-left">
+                        Supercharge your business with Razorpay
+                    </h2>
+
+                    <div class="h-1 w-6 bg-greenLight my-4"></div>
+
+                    <p class="font-mullish text-white max-w-[440px]">
+                        Sign up now to experience the future of payments and offer your customers the best checkout
+                        experience.
+                    </p>
+
+                    <ul class="flex flex-wrap text-white my-8 space-y-2">
+                        <li class="font-mullish flex items-center gap-x-2 mr-12">
+                            <i data-feather="check" class="text-greenLight"></i>
+                            <span>Quick Onboarding</span>
+                        </li>
+
+                        <li class="font-mullish flex items-center gap-x-2 mr-12">
+                            <i data-feather="check" class="text-greenLight"></i>
+                            <span>Access to entire product suite </span>
+                        </li>
+
+                        <li class="font-mullish flex items-center gap-x-2 mr-12">
+                            <i data-feather="check" class="text-greenLight"></i>
+                            <span>API access</span>
+                        </li>
+
+                        <li class="font-mullish flex items-center gap-x-2 mr-12">
+                            <i data-feather="check" class="text-greenLight"></i>
+                            <span>24x7 support</span>
+                        </li>
+
+                    </ul>
+
+                    <button
+                        class="py-3 px-4 min-w-[32px] font-mullish text-sm font-bold bg-white text-lightBlue300 border flex rounded-sm items-center hover:text-lightBlue500 transition-all duration-200">
+                        Sign Up
+
+                        <svg viewBox="0 0 24 24" focusable="false" class="w-[14px] h-[14px] ml-3">
+                            <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z">
+                            </path>
+                        </svg>
+
+                    </button>
+
+                </div>
+
+                <!-- Right Part Image -->
+                <img src="/assets/ctaImg-BX_kughQ.png" alt="" width="240px" height="282px" loading="lazy"
+                    class="hidden lg:block">
+            </div>
+
+        </section>
+        <!-- CALL TO ACTION ENd- -->
+
+        <!-- --------------------------------Footer Start-------------------------------- -->
+        <footer style="background: linear-gradient(to right, #eef9fe, #edf7ff)" class="-mt-[400px] md:-mt-[300px]">
+            <div
+                class="w-10/12 pt-[400px] pb-10 md:pt-[350px] md:my-0 md:w-11/12 max-w-[1080px] mx-auto flex flex-col space-y-6 lg:space-y-0 lg:space-x-4 lg:flex-row justify-between">
+
+                <!-- column - 1 -->
+                <div class="flex flex-col md:max-w-[340px] lg:max-w-[260px]">
+                    <img src="/assets/logo-dark-D-PESCz4.png" loading="lazy" width="120px" height="24px" />
+
+                    <p class="text-sm text-grayText my-3 font-mullish">
+                        Razorpay is the only payments solution in India that allows
+                        businesses to accept, process and disburse payments with its product
+                        suite. It gives you access to all payment modes including credit
+                        card, debit card, netbanking, UPI and popular wallets including
+                        JioMoney, Mobikwik, Airtel Money, FreeCharge, Ola Money and PayZapp.
+                    </p>
+
+                    <p class="text-sm text-grayText my-3 font-mullish">
+                        RazorpayX supercharges your business banking experience, bringing
+                        effectiveness, efficiency, and excellence to all financial
+                        processes. With RazorpayX, businesses can get access to
+                        fully-functional current accounts, supercharge their payouts and
+                        automate payroll compliance.
+                    </p>
+
+                    <p class="text-sm text-grayText my-3 font-mullish">
+                        Manage your marketplace, automate bank transfers, collect recurring
+                        payments, share invoices with customers and avail working capital
+                        loans - all from a single platform. Fast forward your business with
+                        Razorpay.
+                    </p>
+
+                    <p class="text-[0.625rem] text-grayText my-3 font-mullish">
+                        Disclaimer: The RazorpayX powered Current Account and VISA corporate
+                        credit card are provided by RBI licensed banks. Your RazorpayX
+                        powered account is provided by our partner bank, in accordance with
+                        RBI regulations. RazorpayX itself is not a bank and doesn't hold or
+                        claim to hold a banking license.
+                    </p>
+
+                    <p class="font-mullish uppercase font-bold text-gray2">
+                        Subscribe to our newsletter
+                    </p>
+
+                    <form class="relative bg-white w-[260px] mt-2 mb-4">
+                        <input placeholder="Your email address"
+                            class="pr-16 font-mullish border-gray-300 outline-lightBlue focus:outline-lightBlue placeholder:text-sm py-2 px-4 border rounded-sm transition-all duration-200" />
+
+                        <button
+                            class="h-[90%] bg-white absolute right-[1.5px] top-1/2 -translate-y-1/2 z-10 font-mullish text-sm font-bold text-lightBlue300 flex rounded-sm items-center hover:text-lightBlue500 transition-all duration-200">
+                            Subscribe
+                            <svg viewBox="0 0 24 24" focusable="false" class="w-[14px] h-[14px] ml-3">
+                                <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z">
+                                </path>
+                            </svg>
+                        </button>
+
+                    </form>
+
+                    <div class="flex items-start space-x-4">
+                        <img src="/assets/footer-certificate-1-C1ioXQ4T.png" loading="lazy" width="92" height="40"
+                            class="cursor-pointer" />
+
+                        <img src="/assets/footer-certificate-2-BXekwuII.jpg" loading="lazy" width="122" height="80"
+                            class="cursor-pointer" />
+                    </div>
+
+                </div>
+
+                <!-- column - 2 -->
+                <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4 justify-between">
+
+                    <div class="space-y-3">
+                        <div>
+                            <p class="font-mullish uppercase font-bold text-gray2 mb-1">
+                                BANKING PLUS
+                            </p>
+
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">RazorpayX</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Current
+                                        Accounts</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Payouts</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Payout
+                                        Links</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Corporate
+                                        Credit Card</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="relative font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                                        View Live Demo
+                                        <span
+                                            class="text-white font-mullish uppercase bg-green-500 rounded-sm text-xs font-bold p-1">New</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p class="font-mullish uppercase font-bold text-gray2 mb-1">
+                                LENDING
+                            </p>
+
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Razorpay
+                                        Capital</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Instant
+                                        Settlements</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Working
+                                        Capital Loans</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Marketplace
+                                        Instant Settlements</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p class="font-mullish uppercase font-bold text-gray2 mb-1">
+                                RISK & FRAUD
+                            </p>
+
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Thirdwatch</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="relative font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                                        PrePay CoD
+                                        <span
+                                            class="text-white font-mullish uppercase bg-green-500 rounded-sm text-xs font-bold p-1">New</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p class="font-mullish uppercase font-bold text-gray2 mb-1">
+                                BECOME A PARTNER
+                            </p>
+
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Refer
+                                        and Earn</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                                        Onboarding APIs
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p class="font-mullish uppercase font-bold text-gray2 mb-1">
+                                MORE
+                            </p>
+
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Route</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Invoices</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Freelancer
+                                        Payments</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">International</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Flash
+                                        Checkout</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">UPI</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">ePOS</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Checkout
+                                        Demo</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">RazorpayX
+                                        Payroll</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <div class="space-y-3">
+                        <div>
+                            <p class="font-mullish uppercase font-bold text-gray2 mb-1">
+                                ACCEPT PAYMENTS
+                            </p>
+
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Payment
+                                        Gateway</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Payment
+                                        Pages</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Payment
+                                        Links</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">QR
+                                        Codes</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Subscriptions</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                                        Smart Collect
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p class="font-mullish uppercase font-bold text-gray2 mb-1">
+                                DEVELOPERS
+                            </p>
+
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Docs</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Integrations</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">API
+                                        Reference</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p class="font-mullish uppercase font-bold text-gray2 mb-1">
+                                RESOURCES
+                            </p>
+
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Blog</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="relative font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                                        Customer Stories
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="relative font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                                        Events
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="relative font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                                        Chargeback Guide
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="relative font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                                        Settlement Guide
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p class="font-mullish uppercase font-bold text-gray2 mb-1">
+                                SOLUTIONS
+                            </p>
+
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Education</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                                        E-commerce
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                                        Saas
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                                        BFSI
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p class="font-mullish uppercase font-bold text-gray2 mb-1">
+                                FREE TOOLS
+                            </p>
+
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">GST
+                                        Calculator</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Online
+                                        TDS Payment</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="relative font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                                        GST Number Search
+                                        <span
+                                            class="text-white font-mullish uppercase bg-green-500 rounded-sm text-xs font-bold p-1">New</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <div>
+                            <p class="font-mullish uppercase font-bold text-gray2 mb-1">
+                                COMPANY
+                            </p>
+
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">About
+                                        Us</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish relative font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Careers
+                                        <span
+                                            class="text-white font-mullish bg-green-500 rounded-sm text-xs font-bold p-1">We're
+                                            hiring!</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Terms
+                                        of Use</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Privacy
+                                        Policy</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Grievance
+                                        Redressal</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                                        Responsible Disclosure
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                                        Partners
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                                        White Papers
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                                        Corporate Information
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p class="font-mullish uppercase font-bold text-gray2 mb-1 mt-3">
+                                HELP & SUPPORT
+                            </p>
+
+                            <ul class="space-y-2">
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Support</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Knowledge
+                                        base</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p class="font-mullish uppercase font-bold text-gray2 mb-1 mt-6">
+                                FIND US ONLINE
+                            </p>
+
+                            <ul class="flex space-x-4 items-center mt-4">
+                                <li class="cursor-pointer">
+                                    <a href="#">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAdVBMVEUAAABAQIA5VY4uXaI8WpY9VZ41WJ48VZk6Wpw8Wp42V5o4V5k5VZw4WJs3WZs4V5o7Vps5V5k4V5o5Vpo6WJk4V5o5V5k5WJo5V5s5Vpo4V5o5V5k5Vpo5V5o6V5o5V5o5V5o5V5o5V5o5V5o5V5o5V5r///8pHlkRAAAAJXRSTlMABAkLERUdHh8iJjI2QEVJSlVbYm5ymZ2qq6yttMjZ2+3u8fL+Iahw3gAAAAFiS0dEJloImLUAAACGSURBVCjPtc5JDsIwDEDRz5QS5jA1bYC2SX3/K7JBSGldiQ1/ZestbChCkkGpNlB0otQagqhVJB0i2drfd4vZci0ikkF/BoARPJiAC7AtvR/BAXh+5gz2QPM7OOdWwNG5Ww58O03BNQdr7Rww1pbq8dfUV/+ApEOk1iFgWg26DZgqDiF6wxsLrEG6jkGlKQAAAABJRU5ErkJggg==" width="24" height="24" loading="lazy" />
+                                    </a>
+                                </li>
+
+                                <li class="cursor-pointer">
+                                    <a href="#">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAulBMVEUAAAAAv/8Aqv8Atv8AougAsesApfAApvIAre0Ap+0Aqu4Are8ArfAArPEAqPIAru8ArO8ArPAArPEAqvIAqu8AqvAAq+8Aqu8Aq+8ArPEAqu8ArO8Aq+8AqvAAq/EAq+8Aq+8ArPAAq/AAq/AAq+8Aq/AArPAAq/EAq+8Aq/AAq/AAqvAAq/AAq/AAq/EAq+8Aq/AArPAAq/AArPAAq/EAq/AAq/AAq/AAq/AAq/AAq/AAq/AAq/D///9GpjfFAAAAPHRSTlMABAYHCw0RFBwdHh8iJSYvMTQ3OT9FT1FSWW9xc3t9gIKEhYySl5ygo6qrrK291NXb3+Hi5e3u8fL5+v7lGN69AAAAAWJLR0Q90G1RWQAAALJJREFUKM+NkdcSgjAQRa+KJSg27GKvNLFRhPz/d8kASsA4et72npnd7AYQDY/m8HQCiA7lYBMYlIsGjy9c0C/8EOdk5Fior6xdkIruPCr6CClOr6looXei9IaIGdNqGdbyYhPlAjMjmFTxpsEOH6Q5Rqy4d1JxzOyxrbxyyc+Ii5TkBTO3+UOJ831mc1ddy/GLzNxJLKVdLtWGB//vI/LE14/S+cIAsXm50wSI5n70UQmeAthq0JxnsjsAAAAASUVORK5CYII=" width="24" height="24" loading="lazy" />
+                                    </a>
+                                </li>
+
+                                <li class="cursor-pointer">
+                                    <a href="#">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAA9lBMVEUAAAD/AAD/AID/QIDMM2bbJG3fIIDdInfhHmnlI3LmIm/kInLhJG3jInHkJnLgJHLhI3DiJW/hJHDhI2/hI3HiJXDiJXHiJHDjJG/jJHDjI2/hI3HhJW/hJXHhJHDiI3HiI3DjJW/jJXDhJG/hJHHiI3DiJW/iJXDjJG/iJHHiJHDjJXDhJHHhJHDiJHHiJHDhJHHhJHDiI3DjJHHjJHDhJHHiI3DiJHDjJHHjI3DhJW/iJHDiI3DiJXDiJHHjJG/hJHDjJG/iJHDiJHDiJHDiJHDiJHDiJHDiJHHiJHDhJHDiJHDiJHDiJHDiJG/iJHDiJHD///8sFyKbAAAAUHRSTlMAAQIEBQcIDxEdHiYqLS8xOz5dXl9gYWJjZGVmZ29wc3R1dnd4e3x9fpOUmZqbnKGjpKaqq6ytsLO0tcHCw8zOz9fZ2tvi6u3u8fL09fb3+BnAJncAAAABYktHRFGUaXwqAAABFElEQVQoz22R2VLCUBQEJxHQ4C6oGBfUILKIK+ACShRkCRH6/7/Gh4QYqczj6aq5dXukbNtjKV7LkrJjEjKy1CYxTQU9g2rZcYpFxynXBgBMBDC3TUUxj+cAArCNQu8nqPB7BeNkAfpmIeoeXn7Z5iAENfWA2W1u78Zv6MJVLQQV+fC9KUkbn43hVOUQlFLArva73bx2gBUnBOdpcJUHyOkD0sUQnGXgUe8AHd1D+iwGXtUNwDNkTmNV07WgatWLVZVSwIOR73Ryxl388Yp84G1b2noBprr+90HwAqGu6pGSo7hx2+z/SbRdP5To2sZhZHd2ENduzwAWQ9XDoa6q/XCoVvK0bVmjpPt4XbKak+Xz5MnSL6+zh2SiH7c7AAAAAElFTkSuQmCC" width="24" height="24" loading="lazy" />
+                                    </a>
+                                </li>
+
+                                <li class="cursor-pointer">
+                                    <a href="#">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAABKVBMVEUAAAAAAAAAAAAAAAAAAAArAAAgICAcHBwaGhocDg4YGBgWFhYUFBQaEhIaEREUFBQWFhYZFBQYExMYExMXFxcXFxcWFhYWFhYYFBQXExMXFxcYFRUWFhYYFRUYFRUYFRUXFBQWFhYWFhYWFhYYFRUYFRUWFhYYFhYYFRUXFRUXFRUWFBQXFRUXFRUWFBQYFBQXFhYXFRUXFRUYFBQYFBQXFhYXFRUXFhYXFhYXFRUXFRUWFRUYFRUYFRUXFBQXFBQXFRUYFRUXFBQXFhYXFRUXFRUXFRUWFRUWFRUXFRUXFRUXFRUXFRUXFBQXFRUXFBQWFRUXFRUXFRUXFhYXFRUXFRUXFRUXFRUXFRUXFRUXFRUXFhYXFRUXFRUXFRUXFRUXFRUXFRX///8h56K/AAAAYXRSTlMAAQMEBQYICQoSFRcaHR4mLjQ1Njc4OTpAQkNJUlRVVlhcXV5fYGhqa215foWGiouOj5KWl5qbpaanqqusra+wtLi8vb6/wMHCxsvS09TW4OPl6u3u7/Dx8vX2+fr7/P3+K+dsCAAAAAFiS0dEYiu5HTwAAAESSURBVBgZBcEHQwwAAIDRL8rKHSF7h2wiW8gemeEupbz//ye8V8OlMQDA+Omghj8BAGB10BLAt8cLtx9+BXjSGFg+MlHVgRfAKLB2pqqqTq+BYG22qqpq9g8EZ5u8PKiq4ZWpzkFYrhnrdx+8efNgcd3Beo1wpPYDMFNHEd8n6hQAJ2vbD+JR9QWAz9USsVA7tgDY3FF3iOu1/R8AW9vrBrFYfQZgpbpHfKjmAZivPhIbe2ri1iaweXOipv8Srnb/UsOLI35dGFZdQ/g9PfnpbMfhUNXeMYLXkyc2RlswV029hcCznbuPXYe52vUcNAYrs52D8x1eAaOeAl6+h3evAEsNVgEA4Oe+GjwZAQCMHg/6D2HBl2diMIoDAAAAAElFTkSuQmCC" width="24" height="24" loading="lazy" />
+                                    </a>
+                                </li>
+
+                                <li class="cursor-pointer">
+                                    <a href="#">
+                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAxlBMVEUAAAAAbaQAcp4Ab6MAcaEAcaEAcaIAcqAAcaEAcaEAcaEAcaIAcaEAcaEAcaEBcqECcqIDc6IEc6IMeKUPeacVfakYfqoaf6scgasdgawfgqwqiLAui7Ivi7IxjLMzjbRAlblBlblEl7pNnL1Qnr5XocFjqMVlqcZmqsdoq8durspwr8pxsMt3s82JvdKax9mjzNykzNyt0eC62eW92ubR5e3e7fLg7vPh7vPo8vbr9Pfu9vjx9/nz+Pr1+fr9/v3///7///+4iqs3AAAADnRSTlMAHB0nqaqsr+zt7vDx8r0xoZ0AAAABYktHREGJ3mxOAAAAq0lEQVQoz73RRRbCQBRE0R9DAinc3YI27pba/6qYwTnpHvOGdYclYicCxAqSjoidhiHflgSMeRIAhdVuHIesAFiSUS8uAmBLcmqCUcRHwwTohnUY4VeuM2znvzAj2cOavLVOJK8DDV4XkuSzEgcyupPkQoNjGSHJjQYDoPgm9xo0AVzJgwY1AOc/QgB0lFJV9JVSJQBzpSZARpLma11xfNOeskRsL6sd7lryAZ3OPPEdFfx/AAAAAElFTkSuQmCC" width="24" height="24" loading="lazy" />
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p class="font-mullish uppercase font-bold text-gray2 mb-1 mt-6">
+                                REGD. OFFICE ADDRESS
+                            </p>
+
+                            <p class="font-mullish text-sm mt-4 whitespace-nowrap">
+                                Razorpay Software Private Limited, <br />1st Floor, SJR Cyber,
+                                <br />22 Laskar Hosur Road, Adugodi, <br />Bengaluru, 560030,
+                                <br />Karnataka, India <br />CIN: U72200KA2013PTC097389
+                            </p>
+
+                            <div class="font-mullish mt-6">
+                                <p class="text-sm">© Razorpay 2022</p>
+
+                                <p class="text-sm">All Rights Reserved</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- --------------------------------Footer End-------------------------------- -->
+
+
+    </div>
+
+    <!-- to import the feather library -->
+    <script>feather.replace()</script>
+
+</body>
+</html>
